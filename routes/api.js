@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
 
     res.json(newNote);
   } catch (err) {
-    res.status(500).json({ error: "Failed to save note" });
+    res.status(500).json({ error: "Error saving note" });
   }
 });
 
@@ -54,7 +54,7 @@ router.delete("/:id", async (req, res) => {
 
     res.json({ message: "Note deleted" });
   } catch (err) {
-    res.status(500).json({ error: "Failed to delete note" });
+    res.status(500).json({ error: "Error deleting note" });
   }
 });
 
