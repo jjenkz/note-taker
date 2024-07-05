@@ -17,7 +17,7 @@ This simple allows a user to write, save, store and delete notes with using Expr
 ## Usage
 
 - Install the above npm packages and then enter "node server.js" to have the server lisiten. Lastly, the complete application is deployed to Render.
-- Link to website: https://jjenkz.github.io/note-taker/
+- Link to website: https://note-taker-78zb.onrender.com
 
   1.![result](images/Result.PNG) 2.![capture](images/Capture.PNG)
 
