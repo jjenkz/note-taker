@@ -7,15 +7,15 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware to handle JSON parsing
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the public directory
 app.use(express.static("public"));
 
 //Routes connected to the api/notes and html page
-app.use("/", htmlRoute);
 app.use("/api/notes", apiRoute);
+app.use("/", htmlRoute);
 
 // Start the server
 app.listen(PORT, () =>
